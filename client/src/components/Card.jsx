@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Card = ({ product }) => {
@@ -16,7 +17,7 @@ const Card = ({ product }) => {
     return (
         <Link href={`/product/${id}`}>
             <div className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
-                <img
+                <Image
                     src={`data:image/jpeg;base64,${image}`}
                     alt={name}
                     className="w-full h-48 object-cover"

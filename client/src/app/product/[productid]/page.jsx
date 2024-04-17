@@ -1,6 +1,7 @@
 "use client"
 
 import { API_URL } from '@/lib/constants';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const ProductPage = ({ params }) => {
@@ -33,7 +34,7 @@ const ProductPage = ({ params }) => {
     return (
         <div className="container mx-auto py-8">
             <div className="flex flex-col md:flex-row items-center">
-                <img
+                <Image
                     src={`data:image/jpeg;base64,${image}`}
                     alt={name}
                     className="w-full md:w-1/2 rounded-lg shadow-md mb-4 md:mb-0 md:mr-8"
