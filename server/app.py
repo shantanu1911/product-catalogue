@@ -15,7 +15,8 @@ def database_settings():
                 (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, category TEXT, description TEXT, price REAL, image TEXT)''')
     conn.commit()
 
-    
+database_settings()
+ 
 @app.route('/', methods=['GET','POST'])
 def hello_world():
     if request.method == 'GET':
@@ -73,7 +74,6 @@ def get_product_by_id(id):
         cursor.close()
         conn.close()
         return result_list[0]
-    
     
 if __name__ == '__main__':
     database_settings()

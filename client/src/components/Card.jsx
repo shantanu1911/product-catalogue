@@ -17,7 +17,7 @@ const Card = ({ product }) => {
     return (
         <Link href={`/product/${id}`}>
             <div className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
-                <Image
+                <img
                     src={`data:image/jpeg;base64,${image}`}
                     alt={name}
                     className="w-full h-48 object-cover"

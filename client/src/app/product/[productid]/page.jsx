@@ -34,7 +34,7 @@ const ProductPage = ({ params }) => {
     return (
         <div className="container mx-auto py-8">
             <div className="flex flex-col md:flex-row items-center">
-                <Image
+                <img
                     src={`data:image/jpeg;base64,${image}`}
                     alt={name}
                     className="w-full md:w-1/2 rounded-lg shadow-md mb-4 md:mb-0 md:mr-8"

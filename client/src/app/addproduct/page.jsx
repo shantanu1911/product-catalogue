@@ -49,6 +49,14 @@ const AddProduct = () => {
                 body: formDataToSend,
             });
 
+            setFormData({
+                name: "",
+                category: "",
+                description: "",
+                price: "",
+                image: null,
+            })
+
             if (response.ok) {
                 console.log("Form data sent successfully");
             } else {
