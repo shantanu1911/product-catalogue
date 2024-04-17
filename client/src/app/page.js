@@ -29,14 +29,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured Products Section */}
       <div className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-4xl font-bold text-[#BDE0FE] mb-8">
             Featured Products
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Replace with your actual product data */}
             <ProductCard
               image={P1}
               title="Unique Lightings"
@@ -59,14 +57,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Testimonials Section */}
       <div className="bg-gradient-to-r from-[#FFC8DD] to-[#FFAFCC] py-20">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-4xl font-bold text-[#BDE0FE] mb-8">
             What Our Customers Say
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Replace with your actual testimonial data */}
             <Testimonial
               image={User1}
               name="John Doe"
