@@ -77,4 +77,4 @@ def get_product_by_id(id):
     
 if __name__ == '__main__':
     database_settings()
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=8000, host='0.0.0.0')
