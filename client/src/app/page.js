@@ -32,7 +32,7 @@ export default function Home() {
       <div className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-4xl font-bold text-[#BDE0FE] mb-8">
-            Featured Products
+            Most Liked Products
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <ProductCard
