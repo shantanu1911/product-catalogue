@@ -56,31 +56,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="bg-gradient-to-r from-[#FFC8DD] to-[#FFAFCC] py-20">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-4xl font-bold text-[#BDE0FE] mb-8">
-            What Our Customers Say
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <Testimonial
-              image={User1}
-              name="John Doe"
-              quote="I'm absolutely in love with the product I bought. It's truly one-of-a-kind!"
-            />
-            <Testimonial
-              image={User1}
-              name="Jane Smith"
-              quote="The quality and craftsmanship of this product are outstanding. Highly recommended!"
-            />
-            <Testimonial
-              image={User1}
-              name="Michael Johnson"
-              quote="This product has exceeded all my expectations. I'm so glad I found it!"
-            />
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -96,20 +71,6 @@ const ProductCard = ({ image, title, description, price }) => {
         <p className="text-gray-700 mt-2">{description}</p>
         <p className="text-2xl font-bold text-[#A2D2FF] mt-4">{price}</p>
       </div>
-    </div>
-  );
-};
-
-const Testimonial = ({ image, name, quote }) => {
-  return (
-    <div className="bg-white shadow-lg rounded-lg p-6">
-      <div className="flex items-center space-x-4">
-        <div className="relative w-16 h-16 rounded-full overflow-hidden">
-          <Image src={image} alt={name} fill className="object-cover" />
-        </div>
-        <h4 className="text-xl font-bold text-[#BDE0FE]">{name}</h4>
-      </div>
-      <p className="text-gray-700 mt-4">{quote}</p>
     </div>
   );
 };
